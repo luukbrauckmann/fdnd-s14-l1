@@ -1,6 +1,8 @@
 <script>
     export let data;
     import { onMount } from "svelte";
+    const { teams } = data
+
 
     onMount(() => {
 
@@ -57,12 +59,12 @@
                 <input type="text" id="search-team" name="search-team" placeholder="Search Team...">
             </form>
             <div class="team-results">
-                {#each data.teamInfo as { name, logo }}
+                {#each teams as team}
                     <div class="team">
-                        <img src={logo} alt="logo">
-                        <p>{name}</p>
+                        <img src="/images/raimon.png" alt="Raimon Logo">
+                        <p>{team.name}</p>
                     </div>
-                {/each}
+            {/each}
             </div>
         </div>
     </section>

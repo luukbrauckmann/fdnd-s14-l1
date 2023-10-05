@@ -7,7 +7,7 @@
             <img src="/images/home-icon.svg" alt="home button">
             <p>Home</p>
         </a>
-        <a href="#players" class="nav-item">
+        <a href="/players" class="nav-item">
             <img src="/images/all-players-icon.svg" alt="all players button">
             <p>All Players</p>
         </a>
