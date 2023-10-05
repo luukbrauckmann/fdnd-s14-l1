@@ -15,7 +15,7 @@
     <section class="all-teams">
         {#each teams as team}
             <div>
-                <img src="/src/lib/assets/raimon.png" alt="Raimon Logo">
+                <img src="/images/raimon.png" alt="Raimon Logo">
                 <p>{team.name}</p>
             </div>
         {/each}
