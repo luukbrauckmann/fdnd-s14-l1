@@ -1,7 +1,7 @@
 <main>
     <h2>Big Waves</h2>
     <h4>England | London</h4>
-    <img src="/src/lib/assets/big-waves.png" alt="Big Waves Logo">
+    <img src="/images/big-waves.png" alt="Big Waves Logo">
     <section class="team-overview">
         <div>
             <p class="player-name">Mark Evans</p>

@@ -9,15 +9,15 @@
     </section>
     <section class="all-teams">
         <div>
-            <img src="/src/lib/assets/raimon.png" alt="Raimon Logo">
+            <img src="/images/raimon.png" alt="Raimon Logo">
             <p>Raimon</p>
         </div>
         <div>
-            <img src="/src/lib/assets/big-waves.png" alt="Big Waves Logo">
+            <img src="/images/big-waves.png" alt="Big Waves Logo">
             <p>Big Waves</p>
         </div>
         <div>
-            <img src="/src/lib/assets/chaos-angel-zero.png" alt="Chaos Angel Zero Logo">
+            <img src="/images/chaos-angel-zero.png" alt="Chaos Angel Zero Logo">
             <p>Chaos Angel Zero</p>
         </div>
     </section>
