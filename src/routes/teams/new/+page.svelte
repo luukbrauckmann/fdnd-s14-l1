@@ -8,7 +8,7 @@
             <label class="custom-file-upload">
                 <input type="file" id="add-logo" name="add-logo">
                 <div>
-                    <img src="/src/lib/assets/add-image-icon.svg" alt="add button">
+                    <img src="/images/add-image-icon.svg" alt="add button">
                     <p>Add logo</p>
                 </div>
                 </label>
