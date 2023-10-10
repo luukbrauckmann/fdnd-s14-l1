@@ -5,7 +5,7 @@
 
 <main>
     <h2>All Teams</h2>
-    <h4>View all teams</h4>
+    <p class="subtitle-medium">View all teams</p>
     <section>
         <form>
             <input type="search" id="search-term" name="search-term" placeholder="Search team...">

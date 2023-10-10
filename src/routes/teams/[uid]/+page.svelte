@@ -1,6 +1,6 @@
 <main>
     <h2>Big Waves</h2>
-    <h4>England | London</h4>
+    <p class="subtitle-medium">England | London</p>
     <img src="/images/big-waves.png" alt="Big Waves Logo">
     <section class="team-overview">
         <div>
