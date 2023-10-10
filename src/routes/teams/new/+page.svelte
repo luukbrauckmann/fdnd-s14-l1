@@ -1,6 +1,6 @@
 <main>
     <h2>Create Team</h2>
-    <h4>Create your team</h4>
+    <p class="subtitle-medium">Create your team</p>
     <section>
         <form>
             <input type="text" id="team-name" name="team-name" placeholder="Team name...">
