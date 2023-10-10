@@ -4,22 +4,24 @@
 </script>
 
 <main>
-    <h2>All Teams</h2>
-    <p class="subtitle-medium">View all teams</p>
+    <header>
+        <h2>All Teams</h2>
+        <p class="subtitle-medium">View all teams</p>
+    </header>
     <section>
         <form>
             <input type="search" id="search-term" name="search-term" placeholder="Search team...">
         </form>
-        <button>Create your tournament</button>
     </section>
     <section class="all-teams">
         {#each teams as team}
-            <div>
-                <img src="/images/raimon.png" alt="Raimon Logo">
-                <p>{team.name}</p>
-            </div>
+        <div>
+            <img src="/images/raimon.png" alt="Raimon Logo">
+            <p>{team.name}</p>
+        </div>
         {/each}
     </section>
+    <button>Create your tournament</button>
 </main>
 
 <style>
@@ -28,14 +30,13 @@
         display: flex;
         flex-direction: column;
         max-width: 25rem;
-        margin-top: 3rem;
         gap: 1rem;
+        margin-bottom: 1rem;
     }
 
     .all-teams{
         display: flex;
         gap: 1rem;
-        margin-top: 1rem;
     }
 
     div{
@@ -53,13 +54,6 @@
     img{
         width: 3.5rem;
         margin-bottom: 0.5rem;
-    }
-
-    p{
-        font-family: var(--secondary-font-family);
-        font-size: 1rem;
-        color: var(--primary-font-color);
-        text-align: center;
     }
 
     button{

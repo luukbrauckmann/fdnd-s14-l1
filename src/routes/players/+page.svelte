@@ -33,8 +33,10 @@
 </script>
 
 <main>
-    <h2>All Players</h2>
-    <p class="subtitle-medium">View all players</p>
+    <header>
+        <h2>All Players</h2>
+        <p class="subtitle-medium">View all players</p>
+    </header>
     <form>
         <input type="text" id="search-player" name="search-player" placeholder="Search player...">
     </form>
@@ -62,17 +64,15 @@
 
 <style>
 
-    main{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .all-players{
         border-radius: 20px;
-        max-height: 50vh;
+        max-height: 45vh;
         width: 75vw;
         overflow-y: scroll;
+    }
+    
+    form{
+        margin-bottom: 1rem;
     }
 
     .player{
