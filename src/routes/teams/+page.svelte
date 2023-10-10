@@ -24,10 +24,6 @@
 
 <style>
 
-    h2{
-        margin-bottom: 0.5rem;
-    }
-
     form{
         display: flex;
         flex-direction: column;

@@ -110,7 +110,5 @@
         bottom: 3.5rem;
         left: 3.5rem;
     }
-
-
-
+    
 </style>
