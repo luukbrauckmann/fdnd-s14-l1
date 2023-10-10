@@ -1,6 +1,8 @@
 <main>
-    <h2>Create Team</h2>
-    <p class="subtitle-medium">Create your team</p>
+    <header>
+        <h2>Create Team</h2>
+        <p class="subtitle-medium">Create your team</p>
+    </header>
     <section>
         <form>
             <input type="text" id="team-name" name="team-name" placeholder="Team name...">
@@ -19,23 +21,20 @@
 
 <style>
 
-    h2{
-        margin-bottom: 0.5rem;
-    }
-
     form{
         display: flex;
         flex-direction: column;
         max-width: 25rem;
-        margin-top: 3rem;
         gap: 1rem;
     }
 
+    /* 
     p{
         font-family: var(--primary-font-family);
         font-weight: bold;
         color: var(--primary-font-color);
-    }
+    } 
+    */
 
     div{
         display: flex;

@@ -66,6 +66,13 @@ main{
     padding: 6rem 3.5rem;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
 input, textarea{
     outline: none;
     padding: 2vh;
@@ -115,7 +122,6 @@ h2 {
     font-size: clamp(1rem, 4.2vw, 4rem);
     font-weight: 800;
     color: var(--primary-font-color);
-    margin-bottom: 0.5rem;
 }
 
 .subtitle-large{

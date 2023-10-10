@@ -37,12 +37,14 @@
 </script>
 
 <main>
-    <h2>Create Player</h2>
-
+    <header>
+        <h2>Create Player</h2>
+    </header>
+    
     <section>
         <div>
-            <p class="subtitle-medium">Create a player</p>
             <form class="left">
+                <p class="subtitle-medium">Create a player</p>
                 <input type="text" id="fname" name="fname" placeholder="Player name...">
                 <div class="date-jersey">
                     <input type="text" id="date-of-birth" name="date-of-birth" placeholder="Date of birth...">
