@@ -11,11 +11,11 @@
             <img src="/images/all-players-icon.svg" alt="all players button">
             <p>All Players</p>
         </a>
-        <a href="#players" class="nav-item">
+        <a href="/teams" class="nav-item">
             <img src="/images/all-teams-icon.svg" alt="all teams button">
             <p>All Teams</p>
         </a>
-        <a href="#players" class="nav-item">
+        <a href="/tournament" class="nav-item">
             <img src="/images/all-tournaments-icon.svg" alt="all tournaments button">
             <p>All <br> Tournaments</p>
         </a>
