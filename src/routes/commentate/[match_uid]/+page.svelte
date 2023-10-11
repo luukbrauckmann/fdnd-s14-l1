@@ -202,6 +202,10 @@
 		gap: 0.5em;
 	}
 
+	.team__header {
+		margin-bottom: 0px;
+	}
+
 	.scoreboard,
 	.timeline,
 	.team__header {
