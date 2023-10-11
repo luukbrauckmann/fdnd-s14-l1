@@ -11,10 +11,12 @@
                 <input type="file" id="add-logo" name="add-logo">
                 <div>
                     <img src="/images/add-image-icon.svg" alt="add button">
-                    <p>Add logo</p>
+                    <p class="logo-text">Add logo</p>
                 </div>
                 </label>
-            <button>Next</button>
+            <a href="/teams/new-progress">
+                <button>Next</button>
+            </a>
         </form>
     </section>
 </main>
@@ -28,14 +30,12 @@
         gap: 1rem;
     }
 
-    /* 
-    p{
+    .logo-text{
         font-family: var(--primary-font-family);
         font-weight: bold;
         color: var(--primary-font-color);
     } 
-    */
-
+   
     div{
         display: flex;
         flex-direction: column;

@@ -3,10 +3,7 @@
     import { onMount } from "svelte";
     const { teams } = data
 
-
     onMount(() => {
-
-
     //GLOBAL VARIABLES//    
 
     const searchTeamInput = document.getElementById('search-team')
@@ -32,7 +29,14 @@
 
     //EVENT LISTENERS//
     searchTeamInput.addEventListener('keyup', searchTeams);
+
+    //REDIRECT TO ALL PLAYERS PAGE
+    document.querySelector(".save-button").addEventListener('click', () => {
+        location.href= "/players"
+    });
+
     })
+
 
 </script>
 
@@ -58,7 +62,7 @@
         <div>
             <p class="subtitle-medium">Add player to team</p>
             <form>
-                <input type="text" id="search-team" name="search-team" placeholder="Search Team...">
+                <input type="text" id="search-team" name="search-team" placeholder="Search Team...">>
             </form>
             <div class="team-results">
                 {#each teams as team}
@@ -70,7 +74,7 @@
             </div>
         </div>
     </section>
-    <button>Save</button>
+    <button class="save-button">Save</button>
 </main>
 
 <style>

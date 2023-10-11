@@ -26,6 +26,10 @@
 
 <style>
 
+    p{
+        font-family: var(--secondary-font-family);
+    }
+
     form{
         display: flex;
         flex-direction: column;

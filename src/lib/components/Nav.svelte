@@ -15,7 +15,7 @@
             <img src="/images/all-teams-icon.svg" alt="all teams button">
             <p>All Teams</p>
         </a>
-        <a href="/tournament" class="nav-item">
+        <a href="/tournaments" class="nav-item">
             <img src="/images/all-tournaments-icon.svg" alt="all tournaments button">
             <p>All <br> Tournaments</p>
         </a>
@@ -75,6 +75,5 @@
     a p {
         font-size: clamp(0.4rem, 1vw, 1rem);
     }
-
 
 </style>
