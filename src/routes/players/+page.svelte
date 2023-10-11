@@ -5,7 +5,6 @@
 
     onMount(() => {
 
-
     //Search player function
     const searchPlayerInput = document.getElementById('search-player')
 

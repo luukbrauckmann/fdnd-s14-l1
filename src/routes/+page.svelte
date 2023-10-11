@@ -4,8 +4,10 @@
 <main>
     <section>
         <div>
-            <h2>Create Tournament</h2>
-            <p class="subtitle-medium">Create your tournament</p>
+            <a href="/tournaments/new">
+                <h2>Create Tournament</h2>
+                <p class="subtitle-medium">Create your tournament</p>
+            </a>
         </div>
         <div>
             <a href="/teams/new">
