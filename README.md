@@ -20,11 +20,11 @@
 
 <h2 id="usage">🖥️ Usage</h2>
 
-@Todo
+This website is used by the commentators of Ulti.TV. They can add & edit tournaments, matches, teams & players. 
 
 <h2 id="characteristics">✨ Characteristics</h2>
 
-@Todo
+This project is build in Sveltekit. Sveltekit is configured with Vanilla JavaScript & CSS. There is no type checking enabled. Authentication & data is stored in Supabase and is fetched with the REST API and there will be an option to fetch it with GraphQL in the future.
 
 <h2 id="installation">📥 Installation</h2>
 
