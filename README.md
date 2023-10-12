@@ -26,8 +26,6 @@ This website is used by the commentators of Ulti.TV. They can add & edit tournam
 
 This project is build in Sveltekit. Sveltekit is configured with Vanilla JavaScript & CSS. There is no type checking enabled. Authentication & data is stored in Supabase and is fetched with the REST API and there will be an option to fetch it with GraphQL in the future.
 
-https://github.com/luukbrauckmann/fdnd-s14-l1/blob/1519eb7d0e5cef7d21d0c2c20040071ed416f23a/src/lib/supabase.js#L1-L4
-
 <h2 id="installation">📥 Installation</h2>
 
 Do you want to start this project locally? Then follow the next steps. NB! NodeJS must be installed to run npm commands. In the resources section there is a link to the NodeJS website
