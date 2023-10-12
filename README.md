@@ -16,7 +16,7 @@
 
 <h2 id="description">ℹ️ Description</h2>
 
-Commentary Tool is a website where commentators can commentate on 🥏 (frisbee) matches with a real-time statsboard. Statistics keepers can add/edit stats during a match via a page that is specifcally designed to give the ability to do it as fast as possible. Users in general can sign-up and they can create/edit their player or team profile.
+Commentary Tool is a website where commentators can commentate on 🥏 matches with a real-time statsboard. Statistics keepers can add/edit stats during a match via a page that is specifcally designed to give the ability to do it as fast as possible. Users in general can sign-up and they can create/edit their player or team profile.
 
 <h2 id="usage">🖥️ Usage</h2>
 
