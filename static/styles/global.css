@@ -47,6 +47,10 @@
     --hover-background-color: #E7FFF7;
     --bio-player-font-color: #C3C3C3;
     --sub-text-color: #D8D6D6;
+    --scored-by-color:#18D02B;
+    --assist-by-color: #2974E4; 
+    --turnover-by-color: #ED4444;
+    --block-by-color: #FFC738;
 
     /* FONTS */
     --primary-font-family: 'Sora', sans-serif;

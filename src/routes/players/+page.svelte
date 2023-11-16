@@ -18,9 +18,9 @@
         p = player[i].querySelectorAll(".searchTag")[0]; 
         txtValue = p.textContent || p.innerText;
         if (txtValue.toLowerCase().indexOf(filter) > -1) {
-            player[i].style.display = "flex";
+            player[i].hidden = false; //  kijken naar hidden property
         } else {
-            player[i].style.display = "none";
+            player[i].hidden = true;
         }
     }
     }
