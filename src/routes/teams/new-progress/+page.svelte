@@ -2,6 +2,7 @@
         export let data
         const { players } = data
         import { onMount } from 'svelte';
+	import SearchBar from '../../../lib/components/SearchBar.svelte';
 
     onMount(() => {
 
@@ -50,15 +51,16 @@
             </div>
         </div>
         <div class="add-players">
-            <p class="subtitle-medium">Add players to team</p>
-            <form>
-                <input type="text" id="search-player" name="search-player" placeholder="Search player...">
-            </form>
+            <SearchBar
+                LabelValue="Search players to add"
+                InputPlaceholder="Type player name"
+                InputId="search-player"
+            ></SearchBar>
             <div class="add-player-list">
                 {#each players as player}
-                <div class="player">
+                <article class="player">
                     <p class="searchTag player-name">{player.firstname} {player.lastname}</p>
-                </div>
+                </article>
                 {/each}
             </div>
         </div>
@@ -100,14 +102,14 @@
 
     .current-player-name{
         font-family: var(--secondary-font-family);
-        font-size: 16px;
+        font-size: 1rem;
         font-style: italic;
     }
 
     .add-players{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
         width: 50%;
     }
 
