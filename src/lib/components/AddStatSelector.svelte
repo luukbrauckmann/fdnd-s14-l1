@@ -18,6 +18,9 @@
 
 section{
     overflow: hidden;
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
 }
 
 h3{
@@ -32,6 +35,7 @@ h3{
 
 ol{
     height: 100%;
+    width: 100%;
     overflow-y: auto;
 }
 
@@ -40,5 +44,7 @@ li{
     padding: 0.5rem;
     border-bottom: 1px solid var(--button-background-color);
 }
+
+
 
 </style>
