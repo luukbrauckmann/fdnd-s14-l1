@@ -1,91 +1,100 @@
 <script>
-    import { onMount } from "svelte";
-    
-    export let InputName, InputId, InputPlaceholder, InputText, LabelValue;
+	import { onMount } from 'svelte';
 
-    onMount(() => {
-        console.log("Js is enabled on: " + document.URL)
-        
-        let jsEnabled = true;
+	export let InputPlaceholder, InputText, LabelValue;
 
-        // Progressive Enhancement -Als er live naar resultaten gezocht kan worden.
-        // Zo niet, laat dan de zoek knop zien.
-        if (jsEnabled) {
-            let searchButton = document.querySelector('#searchButton');
-            searchButton.setAttribute('hidden', 'true');
-            console.log(searchButton);
-        }
-    });
+	onMount(() => {
+		let jsEnabled = true;
+		// Progressive Enhancement -Als er live naar resultaten gezocht kan worden.
+		// Zo niet, laat dan de zoek knop zien.
+		if (jsEnabled) {
+			let searchButton = document.querySelector('#searchButton');
+			searchButton.setAttribute('hidden', 'true');
+			console.log(searchButton);
+		}
+	});
 
-    function handleSubmit() {
-        // Schrijf nieuwe zoekfunctie op een progressive enhance methoder
-    }
-    
-    </script>
-    
-    <form on:submit|preventDefault={handleSubmit}>
-        <label class="subtitle-medium" for="{InputId}">{LabelValue}</label>
-        <div>
-            <!-- Met de bind:value  -->
-            <input class="searchBar" bind:value={InputText} name="{InputName}" id="{InputId}" type="search" placeholder="{InputPlaceholder}" >
-            <button type="submit" id="searchButton" title="Search"></button>
-        </div>
-    </form>
-    
-    <style>
-        form {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: .7em;
-        }
-    
-        label {
-            padding-left: .2em;
-        }
-    
-        div:nth-of-type(1) {
-            display: flex;
-            flex-flow: row;
-            gap: 1em;
-        }
-    
-        input:nth-of-type(1) {
-            width: 100%;
-            font-size: 1.2rem;
-            padding: 0.2em;
-            padding: 2vh;
-            border-radius: 20px;
-            border: none;
-            box-shadow: var(--box-shadow);
-        }
+	function handleSubmit() {
+		// Schrijf nieuwe zoekfunctie op een progressive enhance methoder
+		console.log('form was not submitted');
+	}
+</script>
 
-        /* Hele enge code */
-        input:nth-of-type(1):not(input:nth-of-type(1):placeholder-shown) {
-            background-color: var(--button-background-color);
-            transition: ease-in-out .3s;
-        }
+<!-- Zoek formulier -->
+<form on:submit|preventDefault={handleSubmit} name="searchForm">
+	<section>
+		<div class="input-container" />
+		<!-- Deze twee velden kunnen misschien in een aparte component   -->
+		<input
+			class="searchBar"
+			bind:value={InputText}
+			name="searchBar"
+			id="searchBar"
+			type="search"
+			placeholder={InputPlaceholder}
+		/>
+		<label class="" for="searchBar">{LabelValue}</label>
+	</section>
+	<button type="submit" id="searchButton" title="Search" />
+</form>
 
-        input:nth-of-type(1):hover, input:nth-of-type(1):focus {
-            transition: ease .4s;
-            outline: 1px solid var(--button-background-color);
-        }
+<style>
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		padding: 0.5rem 1rem;
+		overflow: auto;
+		padding-top: 1.5rem;
+	}
 
-        button{
-            width: 3em;
-            border: hidden;
-            background-color: rgba(0, 0, 0, 0);     
-            background-image: url(../images/search.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 50%;
-        }
-    
-        button:hover {
-            cursor: pointer;
-        }
-    
-        
-    
-        
-    </style>
+	div {
+		position: relative;
+		width: 100%;
+	}
+
+	label {
+		position: absolute;
+		top: 1rem;
+		left: 1.5rem;
+		transition: 0.3s ease-in-out;
+		cursor: text;
+	}
+	input {
+		padding: 1rem 1.5rem;
+		border-radius: 0.9rem;
+		/* border: 3px solid white; */
+		border: none;
+		outline: 3px solid white;
+		outline-offset: -3px;
+		box-shadow: var(--box-shadow);
+		font-size: 1rem;
+		width: 100%;
+		color: var(--text-color);
+	}
+
+	div input:focus ~ label,
+	div input:not(:placeholder-shown) ~ label {
+		top: -1.3rem;
+		font-size: 12px;
+	}
+
+	.active label {
+		top: -1.3rem;
+		font-size: 12px;
+	}
+
+	button {
+		width: 3em;
+		border: hidden;
+		background-color: rgba(0, 0, 0, 0);
+		background-image: url(../images/search.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50%;
+	}
+
+	button:hover {
+		cursor: pointer;
+	}
+</style>

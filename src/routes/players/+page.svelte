@@ -63,6 +63,8 @@
 
 <style>
 
+    
+
     .all-players{
         border-radius: 20px;
         max-height: 45vh;
